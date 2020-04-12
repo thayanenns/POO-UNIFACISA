@@ -3,6 +3,7 @@ Questões Conceituais da Lista de Strings
 2) Na primeira linha, quando criamos uma String nós instanciamos um objeto da classe String.
 Ao instanciarmos uma String sem a palavra reservada new(Como na primeira linha do exemplo),  o Java tentará economizar memória, verificando se já existe um objeto com aquele mesmo conteúdo criado. Em caso positivo, ele reaproveita aquele objeto, atribuindo seu endereço de memória à variável. Por outro lado, sempre que uma String for criada usando explicitamente a palavra reservada new(Como na segunda linha), então independente de já haver um objeto String com aquele conteúdo criado, a JVM criará um novo objeto.
 
+
 3)String pool é uma área de armazenamento no heap Java onde se alocam as strings. Ao instanciarmos uma String a JVM tentará economizar memória verificando se já existe um objeto com o mesmo conteúdo. Em caso positivo, ele reaproveita aquele objeto, atribuindo seu endereço de memória à variável. Porém, sempre que uma String for criada usando explicitamente a palavra reservada NEW, então independente de já haver um objeto String com aquele conteúdo criado, a JVM criará um novo objeto.
 
 
@@ -10,3 +11,4 @@ Ao instanciarmos uma String sem a palavra reservada new(Como na primeira linha d
 No exemplo, armazena-se o conteúdo "Eduardo", logo em seguida ao armazenar o conteúdo "de", a String "Eduardo de" é criada, porém a String "Eduardo" ainda existe na memória e não é utilizada. Após a String "Eduardo de Lucena" ser criada, a String "Eduardo de" e "Eduardo" ainda existem na memória mas não são utilizadas. 
 
 5) Com o uso do StringBuilder, o código anterior seria mais eficiente pelo fato de que objetos de StringBuilder são mutáveis, e nesse caso, sempre que você alterar um StringBuilder, nenhum objeto adicional necessita ser criado. Assim, economizaria espaço na memória e tornaria o código mais eficiente.
+  
