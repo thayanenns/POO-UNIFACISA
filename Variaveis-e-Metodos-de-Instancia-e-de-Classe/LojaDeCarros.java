@@ -1,9 +1,9 @@
-package q1Carro;
+package q2;
 
 public class LojaDeCarros {
 	public static void main (String [] args) 
-	{
-		Carro.promocao = true;
+	{	System.out.println("\n" + "SEM DESCONTO" + "\n");
+		
 		Carro palio = new Carro("Palio","Fiat",35000);
 		System.out.println(palio + "\n");
 		
@@ -35,7 +35,22 @@ public class LojaDeCarros {
 		gol.vidroEletrico = true;
 		System.out.println(gol);
 		
-	
+		System.out.println("\n" + "COM DESCONTO" + "\n");
+		
+		palio.promocao = true;
+		System.out.println(palio + "\n");
+		
+		palio2.promocao = true;
+		System.out.println(palio2 + "\n");
+		
+		civic.promocao = true;
+		System.out.println(civic + "\n");
+		
+		corolla.promocao = true;
+		System.out.println(corolla + "\n");
+		
+		gol.promocao = true;
+		System.out.println(gol + "\n");
 		
 		
 	}
