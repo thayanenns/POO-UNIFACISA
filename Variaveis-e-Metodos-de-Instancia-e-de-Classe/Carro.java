@@ -1,18 +1,17 @@
-package q2;
+package q1Carro;
 
 public class Carro {
-	protected String nome, marca, cor;
-	protected int portas;
-	protected boolean vidroEletrico, arCondicionado, cambioAutomatico, direcaoEletrica;
-	protected double precoBase;
-	protected boolean promocao;
+	String nome, marca, cor;
+	int portas;
+	boolean vidroEletrico, arCondicionado, cambioAutomatico, direcaoEletrica;
+	double precoBase;
+	static boolean promocao;
 	
-	public Carro(String nome, String marca, double precoBase) 
+	public Carro(String nome, String marca, double precoBase ) 
 	{
 		this.nome = nome;
 		this.marca = marca;
 		this.precoBase = precoBase;
-		this.promocao = false;
 		this.cor = "Branco";
 		this.portas = 2;
 		this.vidroEletrico = false;
@@ -33,7 +32,7 @@ public class Carro {
 		this.arCondicionado = arCondicionado;
 		this.cambioAutomatico = cambioAutomatico;
 		this.direcaoEletrica = direcaoEletrica;
-		this.promocao = false;
+		
 	}
 	
 	public Carro() 
@@ -78,8 +77,6 @@ public class Carro {
 		}
 		if(promocao)
 			precoTotal = precoTotal - (precoTotal*10)/100;
-			
-			
 		return precoTotal;
 	}
 
@@ -96,7 +93,6 @@ public class Carro {
 		output += "Direção Elétrica: " +(this.direcaoEletrica == true? "Sim" : "Não") + "\n";
 		output += "Câmbio Automático: " +(this.vidroEletrico == true? "Sim" : "Não") + "\n";
 		output += "Preço Total: " +"R$ "+ calculaPreco();
-		
 		
 		return output;
 	}
