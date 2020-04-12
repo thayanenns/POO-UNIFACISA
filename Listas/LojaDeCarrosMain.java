@@ -20,6 +20,6 @@ public class LojaDeCarrosMain {
 	     System.out.println("Renda das Vendas: R$ "+loja.computaApuradoDasVendas());
 		}	
 	}
-// Obs: "computaApuradoVendas()" possui erros.
+// Obs: "computaApuradoDasVendas()" possui erros.
 
 
