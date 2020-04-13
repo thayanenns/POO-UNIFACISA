@@ -1,0 +1,7 @@
+3) 
+A variável "promoção" ao ser uma variável de classe ajuda na eficiência e eficácia da loja, 
+visto que todos carros da concessionária recebem o mesmo desconto automaticamente, 
+assim nossos funcionários não carecem de aplicar o desconto manuamente. 
+Infelizmente isso não ocorre ao utilizarmos uma variável de instância,
+visto que com ela o desconto precisa ser aplicado individualmente e manualmente a cada carro,
+assim prejudicando o funcionamento ágil da loja.
