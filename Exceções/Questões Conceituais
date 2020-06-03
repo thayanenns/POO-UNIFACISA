@@ -1,0 +1,41 @@
+Qual a estrutura sintática básica para capturar e tratar uma exceção? O que deve ser colocado em cada bloco?
+
+
+
+R-
+try {}
+ 
+catch(excecao e) {}
+
+finally {}
+
+No try é colocado o código que tem possibilidade de lançar uma exceção.
+
+No catch é colocado o código indicando o que fazer quando a exceção for capturada
+
+No finally é colocado o código que deve rodar mesmo após o lançamento e a captura de uma exceção
+
+
+
+O que são exceções checadas e não-checadas? Qual o impacto disso no programa?
+
+R - Exceções checadas - É obrigatório que se trate, o compilador verificará se ela está sendo tratada
+
+Exceções não-checadas - São erros de programação que o programador pode resolver facilmente, é opcional tratar.
+
+O maior impacto é que com as exceções checadas, se não forem tratadas o código não compilará.
+
+
+
+Como são criadas exceções checadas e não-checadas?
+
+R - Para criar a exceção, devemos declara-lá e depois definirmos qual a classe que ela vai herdar.
+
+
+
+Capturar uma exceção de alta hierarquia (e.g., Exception) é uma boa prática? Justifique.
+
+R - Não é boa prática porque o tratamento fica muito generalizado, assim não se é objetivo no tratamento da exceção.
+
+
+2 - O programa lançaria a exceção normalmente e como a IllegalArgumentExcption é uma exceção não checada, o try e catch podem ser retirados, já que o tratamento é opcional
